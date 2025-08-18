@@ -13,18 +13,21 @@ export const Projects = () => {
       title: "Atlas Countries",
       description: "A React app showing country details with live API data.",
       tech: ["React", "Vite", "REST API"],
+      link: "hhttps://github.com/AayushSrivastava444/Atlas-Countries",
     },
     {
       image: "/projects/salesforce.png",
       title: "Salesforce Clone",
       description: "A simplified CRM clone built for learning purposes.",
       tech: ["React", "CSS", "Firebase"],
+      link: "https://github.com/AayushSrivastava444/Salesforce-Login-Page",
     },
     {
       image: "/projects/debttracker.png",
       title: "Debt Tracker",
       description: "Track debts and repayments with simple analytics.",
       tech: ["Node.js", "MongoDB", "Express"],
+      link: "https://github.com/AayushSrivastava444/DebtTracker",
     },
   ];
 
@@ -55,10 +58,12 @@ export const Projects = () => {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            href="#"
+            href={project.link}        // ✅ GitHub link
+            target="_blank"            // ✅ Opens in new tab
+            rel="noopener noreferrer"  // ✅ Security best practice
           >
             <img
-              src={import.meta.env.BASE_URL + project.image}
+              src={import.meta.env.BASE_URL + project.image} // ✅ GitHub Pages safe
               alt={project.title}
               className="project-image"
             />
