@@ -1,8 +1,26 @@
-# React + Vite
+🌐 Portfolio
+A personal portfolio website to showcase my projects, skills, and experience.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
+* Project showcase with live demos and source links
+* About Me section with background and interests
+* Skills & Technologies list
+* Contact form and social media links
 
-Currently, two official plugins are available:
+🛠️ Tech Stack
+[React / Next.js / HTML-CSS-JS, etc.]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Backend: Node.js, Express, etc.]
+
+[Styling: Tailwind, Bootstrap etc.]
+
+[Deployment: Vercel etc.]
+
+
+📄 License
+This project is open source under the MIT License.
+
+📬 Contact
+Find me via LinkedIn - https://www.linkedin.com/in/aayush-srivastava-536174270/ or email: aayushsrivastava444@gmail.com
+
+
