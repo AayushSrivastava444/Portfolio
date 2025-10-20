@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+import aiReviewer from '../assets/projects/ai-reviewer.png';
+import communityCompass from '../assets/projects/Community-compass.png';
+import atlasCountries from '../assets/projects/atlas-countries.png';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -9,25 +12,25 @@ const fadeInUp = {
 export const Projects = () => {
   const projects = [
     {
-      image: "/projects/atlas-countries.png",
+      image: aiReviewer,
+      title: "AI-Code-Reviewer",
+      description: "A React app which reviews the input code",
+      tech: ["React", "JS", "AI API"],
+      link: "https://github.com/AayushSrivastava444/Ai-Code-Reviewer",
+    },
+    {
+      image: communityCompass,
+      title: "Community Compass",
+      description: "A JS app for uploading lost and found items.",
+      tech: ["React", "JS", "Mongodb"],
+      link: "https://github.com/AayushSrivastava444/Community-Compass",
+    },
+    {
+      image: atlasCountries,
       title: "Atlas Countries",
-      description: "A React app showing country details with live API data.",
-      tech: ["React", "Vite", "REST API"],
-      link: "hhttps://github.com/AayushSrivastava444/Atlas-Countries",
-    },
-    {
-      image: "/projects/salesforce.png",
-      title: "Salesforce Clone",
-      description: "A simplified CRM clone built for learning purposes.",
-      tech: ["React", "CSS", "Firebase"],
-      link: "https://github.com/AayushSrivastava444/Salesforce-Login-Page",
-    },
-    {
-      image: "/projects/debttracker.png",
-      title: "Debt Tracker",
-      description: "Track debts and repayments with simple analytics.",
-      tech: ["Node.js", "MongoDB", "Express"],
-      link: "https://github.com/AayushSrivastava444/DebtTracker",
+      description: "A simple react app which tells information about all 195 countries.",
+      tech: ["React", "CSS", "API"],
+      link: "https://github.com/AayushSrivastava444/Atlas-Countries",
     },
   ];
 
@@ -58,12 +61,12 @@ export const Projects = () => {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            href={project.link}        // ✅ GitHub link
-            target="_blank"            // ✅ Opens in new tab
-            rel="noopener noreferrer"  // ✅ Security best practice
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <img
-              src={import.meta.env.BASE_URL + project.image} // ✅ GitHub Pages safe
+              src={project.image}
               alt={project.title}
               className="project-image"
             />
